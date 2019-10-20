@@ -25,10 +25,10 @@ This a command line app that acts like Siri but uses user input in place of voic
 node liri.js concert-this + artist
 
 ```
-This command will make a request from the BiT API and give back concerts for that artist.
- Venue:
- City:
- Date:
+This command will make a request from the BiT API and give back concerts for that artist with the following items:
+Venue:
+City:
+Date:
 
 ![Concert This Function](./images/concert.gif)
 
