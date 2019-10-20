@@ -32,10 +32,6 @@ function run (search, term) {
             console.log("That is not an option :P");
 
     }
-
-    // if (process.argv.length > 4) {
-    //     term = process.argv.slice(3, process.argv.length).join(' ')
-    //   }
 }
 
 
@@ -59,7 +55,7 @@ function concertThis() {
 
 }
 function spotifyThis() {
-    var term = process.argv.splice(3).join(' ');
+    // var term = process.argv.splice(3).join(' ');
     if (!term) {
         term = "Everybody Wants To Be Loved";
     }
@@ -107,9 +103,9 @@ function doIt() {
         //  console.log(data);
          var dataArr = data.split(",");
         //  console.log(dataArr);
-         newSearch = dataArr[0];
-         newTerm = '';
-         run(newSearch, newTerm);
+         search = dataArr[0];
+         term = dataArr[1];
+         run(search, term);
     });
 }
 
