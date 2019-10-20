@@ -2,7 +2,7 @@
 
 This a command line app that acts like Siri but uses user input in place of voice command. 
 
-------------------------------------------
+---
 
 ### Technologies used:
 
@@ -14,11 +14,11 @@ This a command line app that acts like Siri but uses user input in place of voic
 * OMDB API
 * Gitfox
 
-------------------------------------------
+---
 
 [Link to GitHub repo](https://github.com/seyleigh/liriNodeApp)
 
-------------------------------------------
+---
 
 ```javascript
 
@@ -32,5 +32,5 @@ This command will pull back concerts for that artist using the BiT API and give 
 
 ![Concert This Function](./images/concert.gif)
 
-----------------
+---
 
