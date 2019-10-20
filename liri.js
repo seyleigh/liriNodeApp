@@ -23,23 +23,27 @@ function run (search, term) {
         case "movie-this":
             movieThis(term);
             break;
-
+        
         case "do-what-it-says":
             doIt(term);
             break;
 
+        default:
+            console.log("That is not an option :P");
+
     }
 
-    if (process.argv.length > 4) {
-        term = process.argv.slice(3, process.argv.length).join(' ')
-      }
+    // if (process.argv.length > 4) {
+    //     term = process.argv.slice(3, process.argv.length).join(' ')
+    //   }
 }
 
+
 function concertThis() {
-    // if(!term) {
-    //     console.log("\nI need an artist to complete the search\n");
-    //     return;
-    // }
+    if(!term) {
+        console.log("\nI need an artist to complete the search\n");
+        return;
+    }
     axios.get("https://rest.bandsintown.com/artists/" + term + "/events?app_id=codingbootcamp")
     .then(function (response) {
         if (response.data[0] != undefined) {
@@ -55,7 +59,7 @@ function concertThis() {
 
 }
 function spotifyThis() {
-    // var term = process.argv.splice(3).join(' ');
+    var term = process.argv.splice(3).join(' ');
     if (!term) {
         term = "Everybody Wants To Be Loved";
     }
@@ -96,16 +100,16 @@ function movieThis(term) {
 }
 
 function doIt() {
-    fs.readFile('random.txt', "utf8", function (error, data) {
+    fs.readFile("random.txt", "utf8", function (error, data) {
         if (error) {
             return console.log(error)
          } 
         //  console.log(data);
          var dataArr = data.split(",");
         //  console.log(dataArr);
-         search = dataArr[0];
-         term = dataArr[1];
-         spotifyThis(term);
+         newSearch = dataArr[0];
+         newTerm = '';
+         run(newSearch, newTerm);
     });
 }
 
