@@ -94,7 +94,7 @@ with no other parameters it will return a console log stating:
 
 I wasn't able to figure out a way to make spotify return the songs I actually wanted without breaking my do-what-it-says function. I tried many solutions and nothing seemed to work.
 
-I didn't have time to get to the bonus with the ```javascript fs.appendFile ``` to log all my user inputs. I would like to go back and make that work in the future.
+I didn't have time to get to the bonus with the ``` fs.appendFile ``` to log all my user inputs. I would like to go back and make that work in the future.
 
 I learned that you can make terminal code look all pretty and coloured too, which I never knew was possible and I would like to figure that out in the future at some point as well.
 
