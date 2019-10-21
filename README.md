@@ -26,9 +26,9 @@ node liri.js concert-this + artist
 
 ```
 This command will make a request from the BiT API and give back concerts for that artist with the following items:
-- Venue:
-- City:
-- Date:
+- Venue
+- City
+- Date
 
 ![Concert This Function](./images/concert.gif)
 
@@ -48,5 +48,26 @@ The second command will return a song with those words in it, I found out that i
 
 ![Spotify This Null Function](./images/spotifynull.gif)
 ![Spotify This Function](./images/spotify.gif)
+---
+
+```javascript
+
+node liri.js movie-this
+
+node liri.js movie-this + movie name
+
+```
+The first command will return the default movie that has been set.
+
+The second command will return the OMDB data for the given movie the user inputs. The data inclues:
+- Title
+- Year
+- IMDB Rating
+- Rotten Tomatoes Rating
+- Country
+- Language
+- Plot
+- Actors
+
 
 
