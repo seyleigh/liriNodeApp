@@ -44,7 +44,7 @@ node liri.js spotify-this-song + song name
 
 The first command will return the default song that has been set. 
 
-The second command will return a song with those words in it, I found out that it doesn't return exactly the song I have in mind. I haven't found a way to solve that without breaking the 'do what it says' command yet, but I want to keep looking into that.
+The second command will return a song with those words in it, I found out that it doesn't return exactly the song I have in mind. 
 
 ![Spotify This Null Function](./images/spotifynull.gif)
 ![Spotify This Function](./images/spotify1.gif)
@@ -78,7 +78,7 @@ The second command will return the OMDB data for the given movie the user inputs
 node liri.js do-what-it-says
 
 ```
-This command will read the random.txt file and 'do what it says'. Meaning, it will run whichever funtion is put into it along with the term parameters. You can change the 'spotify-this-song' to either of the other two functions with whatever movie or artist of your choice and it will run it just as if you ran it normally.
+This command will read the random.txt file and 'do what it says'. Meaning, it will run whichever funtion is put into it along with the term parameters. You can change the 'spotify-this-song' to either of the other two functions with whatever movie or artist of your choice and it will run it like the concertThis and movieThis functions.
 
 ![Do What It Says Function](./images/doit.gif)
 ---
@@ -94,7 +94,7 @@ with no other parameters it will return a console log stating:
 
 I wasn't able to figure out a way to make spotify return the songs I actually wanted without breaking my do-what-it-says function. I tried many solutions and nothing seemed to work.
 
-I didn't have time to get to the bonus with the fs.appendFile to log all my user inputs. I would like to go back and make that work in the future.
+I didn't have time to get to the bonus with the ```javascript fs.appendFile ``` to log all my user inputs. I would like to go back and make that work in the future.
 
 I learned that you can make terminal code look all pretty and coloured too, which I never knew was possible and I would like to figure that out in the future at some point as well.
 
