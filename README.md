@@ -26,11 +26,27 @@ node liri.js concert-this + artist
 
 ```
 This command will make a request from the BiT API and give back concerts for that artist with the following items:
-Venue:
-City:
-Date:
+- Venue:
+- City:
+- Date:
 
 ![Concert This Function](./images/concert.gif)
 
 ---
+
+```javascript
+
+node liri.js spotify-this-song
+
+node liri.js spotify-this-song + song name
+
+```
+
+The first command will return the default song that has been set. 
+
+The second command will return a song with those words in it, I found out that it doesn't return exactly the song I have in mind. I haven't found a way to solve that without breaking the 'do what it says' command yet, but I want to keep looking into that.
+
+![Spotify This Null Function](./images/spotifynull.gif)
+![Spotify This Function](./images/spotify.gif)
+
 
