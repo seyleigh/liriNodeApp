@@ -8,24 +8,24 @@ var Spotify = require("node-spotify-api");
 var spotify = new Spotify(keys.spotify);
 
 var search = process.argv[2];
-var term = process.argv[3];
+var term = process.argv.splice(3).join(' ');
 
-function run (search, term) {
+function run (search) {
     switch (search) {
         case "concert-this":
-            concertThis(term);
+            concertThis();
             break;
 
         case "spotify-this-song":
-            spotifyThis(term);
+            spotifyThis();
             break;
 
         case "movie-this":
-            movieThis(term);
+            movieThis();
             break;
         
         case "do-what-it-says":
-            doIt(term);
+            doIt();
             break;
 
         default:
@@ -76,7 +76,7 @@ function spotifyThis() {
     });
 }
 
-function movieThis(term) {
+function movieThis() {
     if (!term) {
         term = "Mr. Nobody";
     }
@@ -109,4 +109,4 @@ function doIt() {
     });
 }
 
-run (search, term);
+run (search);
